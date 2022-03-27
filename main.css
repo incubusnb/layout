@@ -1,0 +1,164 @@
+:root {
+  --background: #282a36;
+  --foreground: #f8f8f2;
+  --selection: #44475a;
+  --comment: #6272a4;
+  --red: #ff5555;
+  --orange: #ffb86c;
+  --yellow: #f1fa8c;
+  --green: #50fa7b;
+  --purple: #bd93f9;
+  --cyan: #8be9fd;
+  --pink: #ff79c6;
+}
+
+Body {
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 2.5fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "Body"
+    "Footer";
+  height: 98vh;
+  width: 99vw;
+  border-radius: 15px;
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+  grid-template-areas: "Home Projects Hobbies Skills About";
+  justify-self: center;
+  align-self: center;
+  grid-area: Header;
+  width: 73.4%;
+  height: 100%;
+  background-color: var(--comment);
+  font-size: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(98, 114, 164, 1) 50%,
+    rgba(40, 42, 54, 1) 100%
+  );
+}
+
+.Body {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "SidebarL Content SidebarR";
+  grid-area: Body;
+  color: var(--green);
+  overflow: hidden;
+}
+
+.Home {
+  justify-self: center;
+  align-self: center;
+  grid-area: Home;
+  background-color: var(--orange);
+}
+
+.Projects {
+  justify-self: center;
+  align-self: center;
+  grid-area: Projects;
+  background-color: var(--orange);
+}
+
+.Hobbies {
+  justify-self: center;
+  align-self: center;
+  grid-area: Hobbies;
+  background-color: var(--orange);
+}
+
+.Skills {
+  justify-self: center;
+  align-self: center;
+  grid-area: Skills;
+  background-color: var(--orange);
+}
+
+.About {
+  justify-self: center;
+  align-self: center;
+  grid-area: About;
+  background-color: var(--orange);
+}
+
+.SidebarL {
+  grid-area: SidebarL;
+  background-color: var(--comment);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 114, 164, 1) 50%,
+    rgba(40, 42, 54, 1) 100%
+  );
+}
+
+.SidebarLInner {
+  padding: 10%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".";
+  justify-content: center;
+  align-content: center;
+}
+
+.SidebarR {
+  grid-area: SidebarR;
+  background-color: var(--comment) var(--background);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 42, 54, 1) 10%,
+    rgba(98, 114, 164, 1) 100%
+  );
+}
+
+.SidebarRInner {
+  padding: 10%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".";
+  justify-self: center;
+  align-self: center;
+}
+
+.Content {
+  grid-area: Content;
+  background-color: var(--background);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.ContentInner {
+  padding: 30px;
+  justify-self: center;
+  align-self: center;
+}
+
+.Footer {
+  justify-self: stretch right;
+
+  border-top: 1px dotted black;
+  grid-area: Footer;
+  background-color: var(--comment);
+}
