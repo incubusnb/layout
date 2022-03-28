@@ -73,35 +73,70 @@ Body {
   justify-self: center;
   align-self: center;
   grid-area: Home;
-  background-color: var(--orange);
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+.Home:hover {
+  color: var(--pink);
+  transition: 0.2s;
+  font-size: large;
 }
 
 .Projects {
   justify-self: center;
   align-self: center;
   grid-area: Projects;
-  background-color: var(--orange);
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+.Projects:hover {
+  color: var(--pink);
+  transition: 0.2s;
+  font-size: large;
 }
 
 .Hobbies {
   justify-self: center;
   align-self: center;
   grid-area: Hobbies;
-  background-color: var(--orange);
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+.Hobbies:hover {
+  color: var(--pink);
+  transition: 0.2s;
+  font-size: large;
 }
 
 .Skills {
   justify-self: center;
   align-self: center;
   grid-area: Skills;
-  background-color: var(--orange);
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+.Skills:hover {
+  color: var(--pink);
+  transition: 0.2s;
+  font-size: large;
 }
 
 .About {
   justify-self: center;
   align-self: center;
   grid-area: About;
-  background-color: var(--orange);
+  font-family: "Press Start 2P", cursive;
+  color: white;
+}
+
+.About:hover {
+  color: var(--pink);
+  transition: 0.2s;
+  font-size: large;
 }
 
 .SidebarL {
