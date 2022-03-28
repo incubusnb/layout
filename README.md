@@ -1,6 +1,7 @@
 # Layout
 
-This is just the initial layout for my website. I'm still messing with colors and toying with some ideas before I start adding content.
+This is just the initial layout for my website. I'm still messing with colors and toying with some ideas before I start adding content.  
+You can view the site [here](https://incubusnb.github.io/layout/).
 
 ## TODO
 
