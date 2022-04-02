@@ -12,9 +12,13 @@
   --pink: #ff79c6;
 }
 
-Body {
+body {
   background-color: var(--background);
   overflow: hidden;
+}
+
+ul {
+  list-style-type: "~/";
 }
 
 .Main {
@@ -31,6 +35,7 @@ Body {
   height: 98vh;
   width: 99vw;
   border-radius: 15px;
+  font-family: "Fira Code", normal;
 }
 
 .Header {
@@ -141,6 +146,7 @@ Body {
 
 .SidebarL {
   grid-area: SidebarL;
+  border-top-left-radius: 100px;
   background-color: var(--comment);
   background: linear-gradient(
     90deg,
@@ -160,6 +166,7 @@ Body {
 
 .SidebarR {
   grid-area: SidebarR;
+  border-top-right-radius: 100px;
   background-color: var(--comment) var(--background);
   background: linear-gradient(
     90deg,
@@ -191,8 +198,10 @@ Body {
 }
 
 .Footer {
-  justify-self: stretch right;
-
+  justify-self: stretch;
+  /* justify-self: center; */
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
   border-top: 1px dotted black;
   grid-area: Footer;
   background-color: var(--comment);
